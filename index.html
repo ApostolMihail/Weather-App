@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weatherapp.css">
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <div id="searchBar">
+                <div id="input_cityName">
+                    <input type="text" id="cityName" placeholder="Search City">
+                </div>
+                <div id="weather_forecastWeather">
+                    <div id="weather">
+                        <button id="weatherNow">Weather</button>
+                    </div>
+                    <div id="forecastWeather">
+                        <button id="showForecastWeather">Forecast Weather</button>
+                    </div>
+                </div>
+            </div>
+            <div id="allCards">
+                <div id="weatherCard">
+                    <div id="top_weather_card">
+                        <h2 id="date_city">Targoviste</h2>
+                        <h3 id="date_day">9/12/2021</h3>
+                        <div id="img_description"><img src="http://openweathermap.org/img/wn/10d@2x.png" id="img_desc" width="70px"></div>
+                        <div id="description">clear sky</div>
+                    </div>
+                    <div id="weatherCard_details">
+                        <div id="first_row_details">
+                            <div id="temp_date">
+                                <p>Feels like: &nbsp;</p> <span id="temp"></span><p>&#8451;</p>
+                            </div>
+                            <div id="pressure_date">
+                                <p>Pressure: &nbsp;</p> <span id="pressure"></span>
+                                <img src="./photos/pressure.png" width="25px">
+                            </div>
+                        </div>
+                        <div id="second_row_details">
+                            <div id="temp_min_date">
+                                <p>Temp-min: &nbsp; </p> <span id="temp_min"></span> <p>&#8451;</p>
+                                <img src="./photos/temp_min.png" width="25px">
+                            </div>
+                            <div id="temp_max_date">
+                                <p>Temp-max: &nbsp; </p> <span id="temp_max"></span> <p>&#8451;</p>
+                                <img src="./photos/temp_max.png" width="25px">
+                            </div>
+                            <div id="humidity_date">
+                                <p>Humidity: &nbsp</p> <span id="humidity"></span> <p>%</p>
+                                <img src="./photos/humidity.png" width="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="forecastForSixDays">
+                <!--main weather for 6 days  -->
+            </div>
+        </div>
+        <div id="hourly">
+            <!-- wheater hourly -->
+        </div>
+    </div>
+    <script src="weatherapp.js"></script>
+</body>
+</html>
