@@ -159,7 +159,7 @@ function showForecastWeather() {
                         <p>${date}</p>
                         <div><img src="http://openweathermap.org/img/wn/${element.weather[0].icon}.png" alt=""></div>
                         <div>${currentDate.getHours()}:00</div>
-                        <div>${element.main.temp} &#8451</div>
+                        <div>${Math.round(element.main.temp)} &#8451</div>
                         <div>${element.weather[0].description}</div>
                     </div>
                     `
